@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:id="@+id/Rl_Logo">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/photo"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            >
+
+        </ImageView>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/Ll_Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/Rl_Logo">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:layout_marginTop="5dp"
+            android:id="@+id/Et_Name"
+            android:inputType="textPersonName"
+            >
+
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number"
+            android:layout_marginTop="5dp"
+            android:id="@+id/Et_Number"
+            android:inputType="number">
+
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Birth"
+            android:layout_marginTop="5dp"
+            android:id="@+id/Et_DoB"
+            android:inputType="date">
+
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:layout_marginTop="5dp"
+            android:id="@+id/Et_signEmail"
+            android:inputType="textEmailAddress"
+            >
+
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_marginTop="10dp"
+            android:id="@+id/Et_signPass"
+            android:inputType="textPassword"
+            >
+
+        </EditText>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_Logup"
+            android:background="@color/colorAccent"
+            android:text="Signup"
+            android:layout_marginTop="10dp"
+            >
+
+        </Button>
+
+
+    </RelativeLayout>
+      
